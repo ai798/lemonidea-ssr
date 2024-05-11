@@ -13,7 +13,7 @@
 [![pipeline status][pipeline-src]][pipeline-href]
 [![code style][code-style-src]][code-style-href]
 
-Ewilan Rivière's portfolio, [Nuxt 3](https://nuxt.com/) SSR app with [content](https://content.nuxt.com/) and [i18n](https://i18n.nuxtjs.org/). Analytics with [Umami](https://umami.is/) and contact form with [Discord](https://discord.com/).
+lemonaidea's portfolio, [Nuxt 3](https://nuxt.com/) SSR app with [content](https://content.nuxt.com/) and [i18n](https://i18n.nuxtjs.org/). Analytics with [Umami](https://umami.is/) and contact form with [Discord](https://discord.com/).
 
 Available at [ewilan-riviere.com](https://ewilan-riviere.com).
 
@@ -107,3 +107,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 [pipeline-href]: https://gitlab.com/kiwilan/portfolio
 [code-style-src]: https://antfu.me/badge-code-style.svg
 [code-style-href]: https://github.com/antfu/eslint-config
+# lemonidea-ssr
