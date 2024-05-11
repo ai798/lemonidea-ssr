@@ -10,7 +10,7 @@ const content: NuxtConfig['content'] = {
     theme: 'github-dark',
   },
   defaultLocale: 'en',
-  locales: ['en', 'fr'],
+  locales: ['en', 'ja', 'ma', 'th', 'zh-tw'],
   markdown: {
     remarkPlugins: [
       // 'remark-reading-time',
@@ -22,11 +22,17 @@ const content: NuxtConfig['content'] = {
     fields: ['navTitle'],
   },
 }
-
 // https://i18n.nuxtjs.org/
 const i18n: NuxtConfig['i18n'] = {
   baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
-  locales: [{ code: 'en', iso: 'en-US', name: 'English' }, { code: 'fr', iso: 'fr-FR', name: 'Français' }],
+  locales: [
+    { name_cn: '英文', name: 'English', code: 'en' },
+    { name_cn: '日本語', name: 'Japan', code: 'ja' },
+    { name_cn: 'ภาษาไทย', name: 'ภาษาไทย', code: 'th' },
+    { name_cn: '繁体中文', name: '繁体中文', code: 'zh-tw' },
+    { name_cn: 'Malay', name: 'Malay', code: 'ma' },
+    // { code: 'en', iso: 'en-US', name: 'en' }, { code: '日本語', iso: 'fr-FR', name: 'Japan' }
+  ],
   defaultLocale: 'en',
   vueI18n: './i18n.config.ts',
 }

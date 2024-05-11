@@ -13,7 +13,7 @@ interface HeadMeta {
 }
 
 export function useMetadata(meta?: HeadMeta) {
-  // const appDescription = 'Portfolio of Ewilan Rivière, developer'
+  // const appDescription = 'Portfolio of lemonaidea, developer'
 
   if (!meta)
     meta = {}

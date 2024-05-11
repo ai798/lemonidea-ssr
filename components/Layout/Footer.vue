@@ -70,7 +70,7 @@ const items: {
                     target="_blank"
                     rel="noopener noreferrer"
                     class="underline decoration-dashed"
-                  >Ewilan Rivière</a>.
+                  >lemonaidea</a>.
                 </p>
               </div>
               <div class="text-center mt-10 text-gray-600 dark:text-gray-400 text-sm">

@@ -24,18 +24,18 @@
         />
       </svg>
       <span class="ml-3">
-        {{ $t('home.contact.title') }}
+        {{ $t('contact.title') }}
       </span>
     </h2>
     <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-      {{ $t('home.contact.subtitle') }}
+      {{ $t('contact.subtitle') }}
     </p>
     <div class="mt-6 flex justify-end">
       <AppButton
         color="white"
         :to="{ name: 'contact' }"
       >
-        {{ $t('home.contact.button') }}
+        {{ $t('contact.button') }}
       </AppButton>
     </div>
   </div>

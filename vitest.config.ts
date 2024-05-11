@@ -2,31 +2,35 @@ import path from 'node:path'
 import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   plugins: [
     Vue(),
-    // AutoImport({
-    //   imports: [
-    //     'vue',
-    //     'vue-router',
-    //     'vue-i18n',
-    //     // {
-    //     //   '#imports': [
-    //     //     'useNuxtApp',
-    //     //     'useBaseFetch',
-    //     //     'useRuntimeConfig',
-    //     //     'useState',
-    //     //     'useLazyAsyncData',
-    //     //     'useLocalisationOptions',
-    //     //     'useFavoriteLocalisation',
-    //     //     'useInputValidation',
-    //     //   ],
-    //     // },
-    //   ],
-    // }),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+      imports: [
+        'vue',
+        'vue-router',
+        'vue-i18n',
+        // {
+        //   '#imports': [
+        //     'useNuxtApp',
+        //     'useBaseFetch',
+        //     'useRuntimeConfig',
+        //     'useState',
+        //     'useLazyAsyncData',
+        //     'useLocalisationOptions',
+        //     'useFavoriteLocalisation',
+        //     'useInputValidation',
+        //   ],
+        // },
+      ],
+    }),
     Components({
       dirs: ['./components'],
+      resolvers: [ElementPlusResolver()],
       directoryAsNamespace: true,
     }),
   ],
@@ -54,6 +58,21 @@ export default defineConfig({
         __dirname,
         './node_modules/nuxt/dist/app/index.d.ts',
       ),
+    },
+  },
+  server: {
+    port: 5173,
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://8.218.221.95:18001',
+        changeOrigin: true,
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq, req, res, options) => {
+            // proxyReq.setHeader('cookie', cookie);
+          })
+        },
+      },
     },
   },
 })

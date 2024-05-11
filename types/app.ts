@@ -12,4 +12,4 @@ export interface Route {
   queryList?: Keyable
 }
 
-export type LocaleList = 'en' | 'fr'
+export type LocaleList = 'en'

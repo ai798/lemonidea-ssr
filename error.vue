@@ -39,7 +39,7 @@ watchEffect(() => {
                   </p>
                   <div class="mt-6">
                     <typed-link
-                      :to="{ name: 'index' }"
+                      to="/"
                       class="text-base font-medium text-primary-600 hover:text-primary-500 dark:text-primary-500"
                     >
                       Go back home

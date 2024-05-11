@@ -128,7 +128,7 @@
   {
     "title": "Portfolio",
     "slug": "portfolio",
-    "description": "Ewilan Rivière's portfolio, Nuxt 3 SSR app.",
+    "description": "lemonaidea's portfolio, Nuxt 3 SSR app.",
     "repository": "https://github.com/ewilan-riviere/portfolio",
     "home": "https://ewilan-riviere.com",
     "api": "https://api.github.com/repos/ewilan-riviere/portfolio",

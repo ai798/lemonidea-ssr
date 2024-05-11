@@ -2,21 +2,21 @@ import type { Link, Meta, Script } from '@unhead/schema'
 
 const link: Link<any['link']>[] = [
   {
-    rel: 'apple-touch-icon',
+    rel: 'lemon2',
     sizes: '180x180',
-    href: '/apple-touch-icon.png',
+    href: '/lemon2.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/favicon-32x32.png',
+    href: '/lemon2.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/favicon-16x16.png',
+    href: '/lemon2.png',
   },
   {
     rel: 'manifest',
@@ -38,7 +38,7 @@ const meta: Meta<any['link']>[] = [
   {
     hid: 'author',
     name: 'author',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'language',
@@ -48,22 +48,22 @@ const meta: Meta<any['link']>[] = [
   {
     hid: 'designer',
     name: 'designer',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'publisher',
     name: 'publisher',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'copyright',
     name: 'copyright',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'og:site_name',
     property: 'og:site_name',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'og:locale',
@@ -98,7 +98,7 @@ const meta: Meta<any['link']>[] = [
   {
     hid: 'og:image:alt',
     property: 'og:image:alt',
-    content: 'Ewilan Rivière',
+    content: 'lemonaidea',
   },
   {
     hid: 'twitter:card',

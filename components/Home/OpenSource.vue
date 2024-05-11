@@ -19,8 +19,8 @@ const placeholder = '/images/placeholder.webp'
 <template>
   <div class="mx-auto grid gap-x-8 gap-y-20">
     <HomeTitle
-      :title="$t('home.open-source.title')"
-      :subtitle="$t('home.open-source.subtitle')"
+      :title="$t('open-source.title')"
+      :subtitle="$t('open-source.subtitle')"
     />
     <ul
       role="list"

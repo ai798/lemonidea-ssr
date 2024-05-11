@@ -1,7 +1,13 @@
+import zh from './zh-tw.json'
 import en from './en.json'
-import fr from './fr.json'
+import ma from './ma.json'
+import th from './th.json'
+import ja from './ja.json'
 
 export {
   en,
-  fr,
+  th,
+  ja,
+  zh,
+  ma,
 }

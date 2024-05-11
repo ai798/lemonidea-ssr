@@ -10,8 +10,11 @@ export default defineI18nConfig(async (): Promise<I18nOptions> => ({
   locale: 'en',
   fallbackLocale: 'en',
   messages: {
-    en: await loadLocale('en'),
-    fr: await loadLocale('fr'),
+    'en': await loadLocale('en'),
+    'zh-tw': await loadLocale('zh-tw'),
+    'ja': await loadLocale('ja'),
+    'th': await loadLocale('th'),
+    'ma': await loadLocale('ma'),
   },
 }))
 

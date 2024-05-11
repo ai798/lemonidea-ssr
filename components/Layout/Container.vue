@@ -11,13 +11,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div
-    class="sm:px-8"
-    :class="[
-      margin ? 'mt-16' : 'mt-0 sm:mt-0',
-      { 'fixed w-full': fixed },
-    ]"
-  >
+  <div>
     <div class="mx-auto max-w-7xl lg:px-8">
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">

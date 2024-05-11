@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-const { fetchApi } = useApi()
-await fetchApi()
+// const { fetchApi } = useApi()
+// await fetchApi()
 </script>
 
 <template>

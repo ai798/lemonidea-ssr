@@ -33,7 +33,7 @@ function loaded(loaded: boolean) {
         </blockquote>
         <home-social class="mt-5 mx-auto lg:mx-0 w-max" />
         <p class="mt-5">
-          {{ $t('home.about') }}
+          {{ $t('about') }}
         </p>
       </div>
       <div class="flex mt-10 lg:mt-0">

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useMainStore } from '@/store/main'
 
-const { document } = await useMarkdown('about')
+// const { document } = await useMarkdown('about')
 const { socials } = useMainStore()
 const { t } = useI18n()
 
@@ -25,7 +25,7 @@ useSeoMeta({
           >
             <img
               src="/images/ewilan-riviere.webp"
-              alt="Ewilan Rivière"
+              alt="lemonaidea"
               class="w-64 h-64 object-cover"
             >
           </div>
@@ -35,13 +35,13 @@ useSeoMeta({
         <h1
           class="text-3xl font-semibold text-zinc-800 dark:text-zinc-100 sm:text-4xl"
         >
-          {{ document?.title }}
+          <!-- {{ document?.title }} -->
         </h1>
         <h2 class="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mt-6">
-          {{ document?.subtitle }}
+          <!-- {{ document?.subtitle }} -->
         </h2>
         <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 prose dark:prose-invert">
-          <ContentRenderer :value="document" />
+          <!-- <ContentRenderer :value="document" /> -->
         </div>
       </div>
       <div class="lg:pl-20">

@@ -1,7 +1,9 @@
+import { defineNuxtConfig } from 'nuxt/config'
 import { config, head, modules } from './config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  target: 'static',
   app: {
     head: {
       link: head.link,
@@ -17,6 +19,7 @@ export default defineNuxtConfig({
     'nuxt-seo-kit', // https://github.com/harlan-zw/nuxt-seo-kit
   ],
   modules: [
+    '@element-plus/nuxt',
     '@nuxt/devtools', // https://devtools.nuxtjs.org
     '@nuxtjs/color-mode', // https://color-mode.nuxtjs.org/
     '@nuxt/content', // https://content.nuxtjs.org,
@@ -24,10 +27,27 @@ export default defineNuxtConfig({
     '@pinia/nuxt', // https://pinia.vuejs.org/ssr/nuxt.html
     '@vueuse/nuxt', // https://vueuse.org/guide/index.html#nuxt
     'unplugin-svg-transformer/nuxt', // https://github.com/kiwilan/unplugin-svg-transformer
+    'nuxt-vue3-google-signin',
   ],
+  vite: {
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://8.218.221.95:18001',
+          changeOrigin: true,
+        },
+      },
+    },
+  },
+  googleSignIn: {
+    clientId: '717982749973-o0cr10k4e5f7so0nb2rp0u2kjeum8278.apps.googleusercontent.com',
+  },
   plugins: [
     '~/plugins/animate.ts',
   ],
+  experimental: {
+    crossOriginPrefetch: true,
+  },
 
   linkChecker: {
     failOn404: false,
@@ -51,10 +71,6 @@ export default defineNuxtConfig({
     },
   },
 
-  experimental: {
-    // typedPages: true, // https://nuxt.com/blog/v3-5#fully-typed-pages
-  },
-
   nitro: {
     prerender: {
       ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json'],
@@ -65,4 +81,5 @@ export default defineNuxtConfig({
     includeWorkspace: true, // https://nuxt.com/docs/api/configuration/nuxt-config#includeworkspace
     // shim: true, // https://nuxt.com/docs/api/configuration/nuxt-config#shim
   },
+
 })

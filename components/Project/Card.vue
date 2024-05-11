@@ -8,7 +8,7 @@ const props = defineProps<{
 const { date } = useUtils()
 
 const domain = computed(() => {
-  if (props.project.home && props.project.home.startsWith('https://'))
+  if (props.project.home && props.project.startsWith('https://'))
     return new URL(props.project.home).hostname
 
   return undefined

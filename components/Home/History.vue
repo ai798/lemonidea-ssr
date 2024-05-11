@@ -37,7 +37,7 @@ const tabs = [
           class="h-6 w-6 flex-none"
         />
         <span class="ml-3">
-          {{ $t("home.experience.title") }}
+          {{ $t("experience.title") }}
         </span>
       </h2>
     </div>
@@ -87,7 +87,7 @@ const tabs = [
         :href="getCVPath"
         target="_blank"
       >
-        {{ $t('home.experience.download-cv') }}
+        {{ $t('experience.download-cv') }}
         <svg
           viewBox="0 0 16 16"
           fill="none"

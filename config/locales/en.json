@@ -1,288 +1,115 @@
 {
-  "welcome": "Welcome on Nuxt",
-  "locale": "English",
-  "messages": {
-    "hello": "Hello, {name}!"
-  },
-  "legend": "From {from}",
-  "head": {
-    "home": "Welcome on Ewilan Rivière's portfolio",
-    "about": "About me",
-    "projects": "My projects",
-    "blog": "My blog",
-    "contact": "Contact / Hiring"
-  },
-  "home": {
-    "about": "Welcome to my portfolio, where you can discover my professional and personal projects, some of which are open-source.",
-    "contact": {
-      "title": "Contact",
-      "subtitle": "Send me a message and I'll get back to you as soon as possible.",
-      "button": "Contact me"
-    },
-    "experience": {
-      "title": "Work & Education",
-      "toggle": "Work",
-      "download-cv": "Download my CV"
-    },
-    "articles": {
-      "title": "Latest articles",
-      "subtitle": "My latest articles on my blog"
-    },
-    "open-source": {
-      "title": "Open-source packages",
-      "subtitle": "The open-source libraries that I have developed for various projects."
-    }
-  },
-  "about": {
-    "professional-title": "Fullstack developer",
-    "citation": "Open source is the heart of ours experiences.",
-    "title": "About me",
-    "subtitle": "Tech enthusiast",
-    "follow": "Follow on {social}",
-    "technologies": "Technologies I use"
-  },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "blog": "Blog",
-    "contact": "Contact / Hiring"
-  },
-  "app": {
-    "color-mode": {
-      "light": "Switch to light mode",
-      "dark": "Switch to dark mode"
-    },
-    "locale-switch": "Switch locale"
-  },
-  "hobbies": {
-    "title": "Hobbies",
-    "subtitle": "What I like to do in my free time",
-    "develop": {
-      "label": "Develop & technology watch",
-      "value": "Develop projects with my favorites frameworks, to experiment new features from technology watch."
-    },
-    "read": {
-      "label": "Read",
-      "value": "Read some books like fantasy, science-fiction or novels like Robin Hobb or J.M. Auel."
-    },
-    "gardening": {
-      "label": "Gardening",
-      "value": "Grow my own fruit and vegetables, find the most resilient species and share my harvest."
-    },
-    "podcasts": {
-      "label": "Podcasts",
-      "value": "Listen to podcasts, on culture, video games, technoloy watching or role play."
-    },
-    "role-play": {
-      "label": "Role play",
-      "value": "I'm beginner Game Master, but I love long-term campaigns."
-    },
-    "video-games": {
-      "label": "Video games",
-      "value": "Play to video games and modding, like Elder Scrolls series or simulation games."
-    },
-    "tv-shows": {
-      "label": "TV shows",
-      "value": "I'm watching science-fiction or fantasy TV shows or web series."
-    }
-  },
-  "features": {
-    "code": {
-      "title": "Developement",
-      "text": "Build an application from front-end to back-end, with API. Always look back at what has been coded to see if it can be improved, comments and refactoring allow to always improve the code."
-    },
-    "web-design": {
-      "title": "Responsive & design",
-      "text": "The front-end is the basis for mastering the integration of a model, either with a CSS framework or by hand, with mobile-first development."
-    },
-    "server": {
-      "title": "Deployments",
-      "text": "Deploy projects on servers, either directly with NGINX or in containers, with relational databases (MySQL, PostgreSQL)."
-    },
-    "experiments": {
-      "title": "Tests & experiments",
-      "text": "Write tests to improve the maintainability of projects with a CI/CD. But also see what's new on the technologies I like and test them, then implement them in new projects."
-    },
-    "seo": {
-      "title": "SEO",
-      "text": "Whether it's setting up `head` metadata, open graph, redirects, traffic analysis or ecodesign, SEO is important in every project."
-    },
-    "documentation": {
-      "title": "Technical documentation",
-      "text": "Write technical documentation to explain how to use some projects, to save snippets, to write some articles for developers."
-    }
-  },
-  "statistics": {
-    "education": {
-      "label": "Education",
-      "value": "Master's degree"
-    },
-    "projects": {
-      "label": "Projects",
-      "value": "{number}"
-    },
-    "experience": {
-      "label": "Experience",
-      "value": "{number} years"
-    }
-  },
-  "project": {
-    "title": "A selection of my projects",
-    "subtitle": "Personal, profesional and open-source",
-    "created-at": "Created at {date}",
-    "currently-in": "Currently in",
-    "type": "Type {type}",
-    "details": {
-      "developers": "Developers",
-      "begin-date": "Begin date",
-      "current-status": "Current status",
-      "type": "Type",
-      "about": "About",
-      "repositories-demo": "Repositories & demo",
-      "features": "Features",
-      "languages": "Languages",
-      "technologies": "Technologies",
-      "readme": "GitHub readme from"
-    },
-    "statuses": {
-      "concept": "Concept & prototype",
-      "development": "Development",
-      "finish": "Finishes",
-      "tpam": "TPAM (Third-party application maintenance)"
-    },
-    "types": {
-      "website": "Website",
-      "mobile": "Mobile application",
-      "desktop": "Desktop application",
-      "api": "API",
-      "library": "Library"
-    },
-    "contexts": {
-      "personal": "Personal",
-      "professional": "Professional",
-      "school": "School"
-    },
-    "languages": {
-      "php": "PHP",
-      "vue": "Vue.js",
-      "typescript": "TypeScript"
-    },
-    "features": {
-      "dark-mode": "Dark mode",
-      "search": "Search engine",
-      "api": "API"
-    },
-    "roles": {
-      "lead-developer": "Lead developer",
-      "developer": "Developer",
-      "concept": "Concept & ideas",
-      "designer": "Designer"
-    },
-    "links-origin": {
-      "home": "Homepage",
-      "repository": "Repository",
-      "private": "Private"
-    },
-    "links-type": {
-      "main": "Main",
-      "android": "Android",
-      "ios": "iOS"
-    }
-  },
-  "achievements": {
-    "bachelor": "Bac",
-    "projects": "Projects",
-    "experience": "Experience years"
-  },
-  "history": {
-    "open": "My history",
-    "resume": "Resume",
-    "currently": "currently",
-    "present": "present",
-    "types": {
-      "school": "School",
-      "vocational": "Vocational",
-      "permanent": "Permanent contract"
-    }
-  },
-  "history-items": {
-    "psychology-bachelor": {
-      "title": "Psychology degree",
-      "abstract": "A background in psychology with a focus on child and adolescent development.",
-      "level": "Bac +3",
-      "role": "Student"
-    },
-    "web-and-mobile-developer": {
-      "title": "Web & mobile developer",
-      "abstract": "A high quality training, launched within the framework of the “grande école du numérique”, which allows to train in 8 months to the basics and to some advanced notions of web development.",
-      "level": "Bac +2",
-      "role": "Student"
-    },
-    "poec-java": {
-      "title": "POEC Java",
-      "abstract": "Three months intensive on Java to understand the basics up to recent frameworks like Spring.",
-      "level": "3 months",
-      "role": "Student"
-    },
-    "developer-designer-of-applications": {
-      "title": "Developer Designer of Applications",
-      "abstract": "A vocational studies, 25% of the time per month at the ENI school and 75% of the time at UseWeb.",
-      "level": "Bac +4",
-      "role": "Fullstack developer"
-    },
-    "manager-of-digital-and-data-solutions": {
-      "title": "Manager of Digital and Data Solutions",
-      "abstract": "Organize an information system, acquire the fundamental technological and methodological notions allowing the management of an information system, manage a team (management, conducting meetings, recruitment), manage an IT project.",
-      "level": "Bac +5",
-      "role": "Fullstack developer"
-    },
-    "useweb": {
-      "title": "Useweb",
-      "abstract": "As fullstack developer, I work on the development of web applications, from the conception to the deployment. I also work on the maintenance of existing applications.",
-      "role": "Fullstack developer"
-    },
-    "freelance": {
-      "title": "Freelance",
-      "role": "Fullstack developer"
-    }
-  },
-  "blog": {
-    "title": "Some useful guides",
-    "subtitle": "About tech, web and servers",
-    "article": {
-      "read-more": "Read more",
-      "published-at": "Published at {date}",
-      "updated-at": "Updated at {date}",
-      "last-update": "Last update {date}",
-      "tags": "Tags"
-    }
-  },
-  "contact": {
-    "page-title": "Contact me",
-    "page-subtitle": "Only nice messages!",
-    "title": "You've send mail!",
-    "subtitle": "If you want to contact me for a new project!",
-    "about": "You can contact me if you have any questions about my work, if you're a developer and would like some advice, or if you have a project requiring the development of a web application.",
-    "hiring-message": "If you'd like to contact me about a project, don't hesitate to click on the corresponding button at the end of the form, to get an answer as quickly as possible.",
-    "terms": "I agree that the information inserted in this form will be collected and kept for a maximum of two years, in accordance with the GDPR in force in Europe.\n\nThis data will be used only to contact me and will not be transmitted to a third party.\n\nThey will be destroyed when the period authorized by the GDPR is exceeded or if I make the request by this same form.",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message / Project",
-      "characters": "characters",
-      "currently": "Currently",
-      "accept": "I accept the",
-      "terms": "terms and conditions",
-      "understand": "Understood",
-      "is-project": "I want to hire you for a project",
-      "submit": "Let's talk"
-    }
-  },
-  "footer": {
-    "contact-me": "Contact / Hiring",
-    "mit-license": "MIT License",
-    "built-with": "Built with",
-    "design-inspired": "Design inspired by"
-  }
+
+  "lemonaidea_slogan": "Become Lemon8 Pro Now",
+
+  "lemonaidea_subtitle": "#1 Pick For Lemon8 Creator",
+  "lemonaidea_login_google": "Sign in with Google",
+  "lemonaidea_login_title_wb": "Welcome Back",
+  "lemonaidea_login": "Add an account",
+  "lemonaidea_logout": "Log Out",
+
+  "lemonaidea_title_imitation": "Title Generation",
+  "lemonaidea_text_imitation": "Body Text Generation",
+  "lemonaidea_title_improve": "Title Optimization",
+  "lemonaidea_text_improve": "Body Text Optimization",
+  "lemonaidea_desc_title_imitation": "Quickly help you generate Lemon8 popular titles with one click",
+  "lemonaidea_desc_text_imitation": "Generate Lemon8 popular popular text with one click",
+  "lemonaidea_desc_title_improve": "Copy your title and optimize it quickly with one click",
+  "lemonaidea_desc_text_improve": "Copy your text  and generate popular content",
+  "lemonaidea_btn_get_started": "Start Creating",
+
+  "lemonaidea_title_imitation_edit_tips_a": "Please enter the popular title of the same type that you want to learn from (required)",
+  "lemonaidea_title_imitation_edit_tips_b": "Please copy and paste the title here",
+  "lemonaidea_title_imitation_edit_tips_c": "Please enter your note type",
+  "lemonaidea_title_imitation_edit_tips_d": "Please enter here",
+  "lemonaidea_btn_send": "Send",
+  "lemonaidea_title_imitation_result": "Results",
+  "lemonaidea_toast_copy_success": "Copied successfully",
+  "lemonaidea_change": "Change",
+
+  "lemonaidea_text_imitation_edit_tips_a": "Please enter the popular content of the same type that you want to refer to (required)",
+  "lemonaidea_text_imitation_edit_tips_b": "Please copy and paste the text here",
+  "lemonaidea_text_imitation_edit_tips_c": "Please enter your note type",
+  "lemonaidea_text_imitation_edit_tips_d": "Please enter here",
+  "lemonaidea_text_imitation_result": "Results",
+  "lemonaidea_btn_showall": "All",
+
+  "lemonaidea_title_improve_edit_tips_a": "Please enter the title content you want to optimize (required)",
+  "lemonaidea_title_improve_edit_tips_b": "Please copy and paste the title here",
+
+  "lemonaidea_text_improve_edit_tips_a": "Please enter the  content you want to optimize (required)",
+  "lemonaidea_text_improve_edit_tips_b": "Please copy and paste the text here",
+
+  "lemonaidea_limited_free": "Limited-time free",
+  "lemonaidea_limited_free_title": "💡Tips",
+  "lemonaidea_limited_free_desc": "Function temporarily open for free，welcome to provide feedback on features.",
+  "lemonaidea_limited_free_btn": "Got it",
+
+  "lemonaidea_feedback": "Feedback",
+  "lemonaidea_feedback_confirm": "Confirm",
+
+  "lemonaidea_tips_chance": "",
+  "lemonaidea_tips_chance_two": "times remaining",
+
+  "lemonaidea_toast_fail": "Network error. Try again plz",
+
+  "home": "Home",
+  "list": "List",
+  "member": "Member",
+  "demo": "demo",
+
+  "en": "English",
+  "zh": "Chinese",
+
+  "support": "support",
+  "cssMultiLanguage": "CSS picture multi-language",
+
+  "details": "list details",
+
+  "confirm": "confirm",
+  "cancel": "Cancel",
+
+  "lemonaidea_login_alert_desc_a": "You cannot switch to 4.0 mode if you are not logged in please log in first",
+  "lemonaidea_login_alert_desc_b": "Sign in to unlock more opportunities",
+  "lemonaidea_login_alert_btn_go": "Go to login",
+
+  "lemonaidea_login_alert_desc_c": "Log in to the website to get more usage times. After logging in and inviting friends you can also get the opportunity to use version 4.0 worth $20!",
+  "lemonaidea_invite_title": "Unlock 4.0 mode for free",
+  "lemonaidea_invite_alert_desc": "⚡️Limited time invitation event': ",
+  "lemonaidea_invite_alert_desc_one": "1. Every time you invite a friend to log in successfully you can all use GPT4.0 for free ",
+  "lemonaidea_invite_alert_desc_one_money": "(original price $20/month)",
+  "lemonaidea_invite_alert_desc_two": "2. Every time you invite a friend the daily number of GPT4.0 usage +10; you can invite up to 10 friends",
+  "lemonaidea_invite_desc_one": "Your exclusive invitation link 🔗",
+  "lemonaidea_invite_desc": "Come to Lemonaidea and experience the magic of Lemon8 note generation. Register through 🔗",
+  "lemonaidea_invite_desc_left": " and use ChatGPT4.0 for free",
+  "lemonaidea_invite_desc_outside": "Come to Lemonaidea and experience the magic of Lemon8 note generation. Register through🔗 ",
+  "lemonaidea_invite_desc_outside_left": " and use ChatGPT4.0 for free",
+  "lemonaidea_invite_copy": "Copy",
+  "lemonaidea_invite_link_login_subtitle": "💡After successful registration both you and",
+  "lemonaidea_invite_link_login_subtitle_two": " can use Chat GPT4.0 for free⚡️",
+
+  "lemonaidea_privacy": "Privacy Policy",
+
+  "lemonaidea_login_code_sent_toast": "Verification code sent",
+  "leomaidea_login_verify_expired": "Verification code has expired",
+  "leomaidea_login_verify_error": "Verification code error",
+  "lemonaidea_login_subtitle": "Please enter the code sent to ",
+  "lemonaidea_login_subtitle_left": "",
+
+  "lemonaidea_login_title_web": "Join Lemonaidea",
+
+  "lemonaidea_login_btn_web": "Log In",
+
+  "lemonaidea_login_emailadress": "Email Address",
+
+  "leomaidea_login_verify_code": "Verification Code",
+
+  "lemonaidea_invite_entrance_web": "Unlock GPT4.0 for free",
+
+  "lemonaidea_login_policy": "By continuing, you are agreeing to Lemonaidea's ",
+  "lemonaidea_login_policy_left": ".",
+
+  "lemonaidea_thinking": "Thinking...",
+
+  "lemonidea_feedback_notice": "Please enter your feedback"
 }
