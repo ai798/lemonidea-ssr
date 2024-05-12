@@ -13,14 +13,14 @@ const service: AxiosInstance = axios.create({
 service.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     // console.log('userStore', pinia.asyncData)
-    const getToken = window.localStorage.getItem('user_token')
+    const getToken = localStorage.getItem('user_token')
     // console.log(document.cookie)
     // const getToken = Cookies.value
     // console.log(Cookies, 'getToken')
     if (getToken)
       config!.headers!.Authorization = unref(`Bearer ${getToken}`) ?? ''
     else
-      config!.headers.uuid = window.localStorage.getItem('unlogin_uuid')
+      config!.headers.uuid = localStorage.getItem('unlogin_uuid')
       // config!.headers.uuid = UnloginUuid.value
 
     config!.headers.timezone = new Date().getTimezoneOffset() / 60

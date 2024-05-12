@@ -38,7 +38,7 @@ function handleChangeLocal(lang: any) {
   userStore.setLang(locals)
   locale.value = locals
   visiable.value = false
-  window.localStorage.setItem('lemon_web_lang', lang)
+  localStorage.setItem('lemon_web_lang', lang)
 }
 </script>
 

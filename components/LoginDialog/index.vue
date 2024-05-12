@@ -17,7 +17,7 @@ interface Props {
   showDialog?: boolean
 }
 const origin = computed(() => {
-  return window.location.origin
+  return location.origin
 })
 
 watch(
