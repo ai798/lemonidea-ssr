@@ -282,18 +282,6 @@ function handleShowFreeTips() {
     </el-dialog>
   </ClientOnly>
 
-  <!-- <router-view
-    v-slot="{ Component }"
-    :key="router.currentRoute.value.path"
-  >
-    <transition
-      name="fade"
-      mode="out-in"
-    >
-      <component :is="Component" />
-    </transition>
-  </router-view> -->
-
   <!-- 已登录的tips弹窗--->
   <ClientOnly>
     <LoginDialog :show-dialog="showDialog" />
