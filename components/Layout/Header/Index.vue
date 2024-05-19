@@ -161,63 +161,62 @@ function handleShowFreeTips() {
         class="icon-box"
         @click="handleGoToIns"
       >
-        <div
+        <img
           class="small-icon"
-          src="@/assets/instagram2.png"
+          src="@/assets/instagram.jpg"
           alt=""
         >
-          <span>Instagram</span>
-        </div>
-        <div
-          class="icon-box"
-          @click="showFeedBack = true"
+        <span>Instagram</span>
+      </div>
+      <div
+        class="icon-box"
+        @click="showFeedBack = true"
+      >
+        <img
+          class="small-icon"
+          src="@/assets/mail.png"
+          alt=""
         >
-          <img
-            class="small-icon"
-            src="@/assets/mail.png"
-            alt=""
+        <span>{{ $t("lemonaidea_feedback") }}</span>
+      </div>
+      <li class="hidden !block">
+        <ClientOnly>
+          <Dropdown />
+        </ClientOnly>
+      </li>
+      <div
+        v-if="!user?.user?.username"
+        class="login"
+        @click="handleGoLogin()"
+      >
+        {{ $t("lemonaidea_login_btn_web") }}
+      </div>
+      <el-popover
+        :visible="visible"
+        placement="bottom"
+        :width="212"
+      >
+        <template #reference>
+          <div
+            v-if="user?.user?.username"
+            class="user-header"
+            @click="visible = !visible"
           >
-          <span>{{ $t("lemonaidea_feedback") }}</span>
-        </div>
-        <li class="hidden !block">
-          <ClientOnly>
-            <Dropdown />
-          </ClientOnly>
-        </li>
-        <div
-          v-if="!user?.user?.username"
-          class="login"
-          @click="handleGoLogin()"
-        >
-          {{ $t("lemonaidea_login_btn_web") }}
-        </div>
-        <el-popover
-          :visible="visible"
-          placement="bottom"
-          :width="212"
-        >
-          <template #reference>
-            <div
-              v-if="user?.user?.username"
-              class="user-header"
-              @click="visible = !visible"
-            >
-              {{ user?.user?.username?.slice(0, 1) ?? "" }}
-            </div>
-          </template>
-          <!-- <div v-else @click="router.push('/register')">
+            {{ user?.user?.username?.slice(0, 1) ?? "" }}
+          </div>
+        </template>
+        <!-- <div v-else @click="router.push('/register')">
         go login
       </div> -->
-          <div
-            v-on-click-outside="closeModel"
-            class="inner"
-            @click="handleLogout"
-          >
-            <img src="@/assets/logout.jpg">
-            <p>{{ $t("lemonaidea_logout") }}</p>
-          </div>
-        </el-popover>
-      </div>
+        <div
+          v-on-click-outside="closeModel"
+          class="inner"
+          @click="handleLogout"
+        >
+          <img src="@/assets/logout.jpg">
+          <p>{{ $t("lemonaidea_logout") }}</p>
+        </div>
+      </el-popover>
     </div>
   </div>
 
