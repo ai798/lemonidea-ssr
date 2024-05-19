@@ -23,7 +23,8 @@
     "test": "vitest --dom",
     "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "created": "mkdir .output/server/node_modules/@popperjs && mv .output/server/node_modules/@sxzz/popperjs-es .output/server/node_modules/@popperjs/core"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -33,6 +34,7 @@
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/composition-api": "^0.34.0",
     "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@nuxtjs/proxy": "^2.1.0",
     "@pinia/nuxt": "^0.4.11",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.10",
