@@ -29,16 +29,16 @@ export default defineNuxtConfig({
     'unplugin-svg-transformer/nuxt', // https://github.com/kiwilan/unplugin-svg-transformer
     'nuxt-vue3-google-signin',
   ],
-  vite: {
-    server: {
-      proxy: {
-        '/api': {
-          target: 'http://8.218.221.95:18001',
-          changeOrigin: true,
-        },
-      },
-    },
-  },
+  // vite: {
+  //   server: {
+  //     proxy: {
+  //       '/api': {
+  //         target: 'http://8.218.221.95:18001',
+  //         changeOrigin: true,
+  //       },
+  //     },
+  //   },
+  // },
   googleSignIn: {
     clientId: '717982749973-o0cr10k4e5f7so0nb2rp0u2kjeum8278.apps.googleusercontent.com',
   },
@@ -74,6 +74,12 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json'],
+    },
+    devProxy: {
+      '/api': {
+        target: 'http://8.218.221.95:18001',
+        changeOrigin: true,
+      },
     },
   },
 

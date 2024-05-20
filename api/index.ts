@@ -2,12 +2,13 @@ import { http } from '@/utils/request'
 
 // import { useUserStore } from "@/store/modules/user";
 // const userStore = useUserStore();
+const BASE_URL = 'http://8.218.221.95:18001'
 /**
  * 账号密码登录
  * @returns UseAxiosReturn
  */
 export function loginPassword(lang: any) {
-  return http.post(`/api/login`, {
+  return http.post(`${BASE_URL}/api/login`, {
     data: { name: '123' },
     headers: {
       'Accept-Language': lang,
@@ -122,7 +123,7 @@ export function googleLogin(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function getUserPrivacy(lang: any) {
-  return http.get(`/api/user/privacy`, {
+  return http.get(`${BASE_URL}/api/user/privacy`, {
     headers: {
       'Accept-Language': lang,
     },

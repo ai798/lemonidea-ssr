@@ -486,7 +486,7 @@ function handleShowFreeTips() {
 .el-dialog--center {
   width: 590px;
   flex-shrink: 0;
-  border-radius: 24px;
+  border-radius: 24px !important;
   background: #fff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
 }
