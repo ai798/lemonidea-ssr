@@ -21,7 +21,7 @@ export function loginPassword(lang: any) {
  * @returns UseAxiosReturn
  */
 export function generate(data: any, lang: any) {
-  return http.post(`/api/chat/generate`, data, {
+  return http.post(`${BASE_URL}/api/chat/generate`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -32,7 +32,7 @@ export function generate(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function sendFB(data: any, lang: any) {
-  return http.post(`/api/user/feedback`, data, {
+  return http.post(`${BASE_URL}/api/user/feedback`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -44,7 +44,7 @@ export function sendFB(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function postSendCode(data: any, lang: any) {
-  return http.post(`/api/user/verifycode`, data, {
+  return http.post(`${BASE_URL}/api/user/verifycode`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -56,7 +56,7 @@ export function postSendCode(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function postRegister(data: any, lang: any) {
-  return http.post(`/api/user/register`, data, {
+  return http.post(`${BASE_URL}/api/user/register`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -68,7 +68,7 @@ export function postRegister(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function checkRegister(data: any, lang: any) {
-  return http.post(`/api/user/checkregister`, data, {
+  return http.post(`${BASE_URL}/api/user/checkregister`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -79,7 +79,7 @@ export function checkRegister(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function postLogin(data: any, lang: any) {
-  return http.post(`/api/user/login`, data, {
+  return http.post(`${BASE_URL}/api/user/login`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -90,7 +90,7 @@ export function postLogin(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function getUserProfile(lang: any) {
-  return http.get(`/api/user/profile`, {
+  return http.get(`${BASE_URL}/api/user/profile`, {
     headers: {
       'Accept-Language': lang,
     },
@@ -101,7 +101,7 @@ export function getUserProfile(lang: any) {
  * @returns UseAxiosReturn
  */
 export function postInviteUserProfile(data: any, lang: any) {
-  return http.post(`/api/user/invitecodeinfo`, data, {
+  return http.post(`${BASE_URL}/api/user/invitecodeinfo`, data, {
     headers: {
       'Accept-Language': lang,
     },
@@ -112,7 +112,7 @@ export function postInviteUserProfile(data: any, lang: any) {
  * @returns UseAxiosReturn
  */
 export function googleLogin(data: any, lang: any) {
-  return http.post(`/api/user/logingoogle`, data, {
+  return http.post(`${BASE_URL}/api/user/logingoogle`, data, {
     headers: {
       'Accept-Language': lang,
     },
