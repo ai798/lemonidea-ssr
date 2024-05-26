@@ -11,7 +11,7 @@ const languagesArray = ref([
   { type: 'en', name: 'English' },
   { type: 'th', name: 'ภาษาไทย' },
   { type: 'zh-tw', name: '繁體中文' },
-  { type: 'ma', name: 'Malay' },
+  { type: 'ms', name: 'Malay' },
 ])
 const currentLang = computed(() => {
   return languagesArray.value.find((item: any) => item.type === locale.value)
@@ -32,7 +32,7 @@ function handleChangeLocal(lang: any) {
   else if (lang === langs[3])
     locals = 'zh-tw'
   else if (lang === langs[4])
-    locals = 'ma'
+    locals = 'ms'
 
   setLocale(locals)
   userStore.setLang(locals)

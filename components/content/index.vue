@@ -119,7 +119,7 @@ const locals = computed(() => {
   // else if (locale.value === langs[3])
   //   return 'zh-hk'
   // else if (locale.value === langs[4])
-  //   return 'ma'
+  //   return 'ms'
   return locale.value
 })
 
@@ -175,7 +175,7 @@ const items = ref([
 ])
 function handleReSend() {
   judge()
-  generate(objEle, locals.value)
+  generate(objEle, locals.value, userStore.getUserToken)
     .then((res) => {
       if (res.errCode === 0) {
         if (
@@ -237,7 +237,7 @@ function handleChat() {
   localStorage.setItem('subject', secondInput.value)
   judge()
   isLoading.value = true
-  generate(objEle, locals.value)
+  generate(objEle, locals.value, userStore.getUserToken)
     .then((res) => {
       if (res.errCode === 0) {
         if (

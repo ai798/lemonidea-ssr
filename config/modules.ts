@@ -10,7 +10,7 @@ const content: NuxtConfig['content'] = {
     theme: 'github-dark',
   },
   defaultLocale: 'en',
-  locales: ['en', 'ja', 'ma', 'th', 'zh-tw'],
+  locales: ['en', 'ja', 'ms', 'th', 'zh-tw'],
   markdown: {
     remarkPlugins: [
       // 'remark-reading-time',
@@ -26,11 +26,11 @@ const content: NuxtConfig['content'] = {
 const i18n: NuxtConfig['i18n'] = {
   baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
   locales: [
-    { name_cn: '英文', name: 'English', code: 'en' },
-    { name_cn: '日本語', name: 'Japan', code: 'ja' },
-    { name_cn: 'ภาษาไทย', name: 'ภาษาไทย', code: 'th' },
-    { name_cn: '繁体中文', name: '繁体中文', code: 'zh-tw' },
-    { name_cn: 'Malay', name: 'Malay', code: 'ma' },
+    { name_cn: '英文', name: 'English', code: 'en', iso: 'en-US', isCatchallLocale: true },
+    { name_cn: '日本語', name: 'Japan', code: 'ja', iso: 'ja' },
+    { name_cn: 'ภาษาไทย', name: 'ภาษาไทย', code: 'th', iso: 'th' },
+    { name_cn: '繁体中文', name: '繁体中文', code: 'zh-tw', iso: 'zh-TW' },
+    { name_cn: 'Malay', name: 'Malay', code: 'ms', iso: 'ms' },
     // { code: 'en', iso: 'en-US', name: 'en' }, { code: '日本語', iso: 'fr-FR', name: 'Japan' }
   ],
   defaultLocale: 'en',

@@ -5,5 +5,5 @@ export const CLIENTID = '284480972964-t4vjtiggck4n3oajdhu9fpvak0iv2f1l.apps.goog
 
 // export function testRoute() {
 //   const cur = router.currentRoute.value.path.split('/')
-//   return cur.find((ele: string) => ['ja', 'ma', 'zh-tw', 'th'].indexOf(ele))
+//   return cur.find((ele: string) => ['ja', 'ms', 'zh-tw', 'th'].indexOf(ele))
 // }

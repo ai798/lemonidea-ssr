@@ -14,7 +14,7 @@ export default defineI18nConfig(async (): Promise<I18nOptions> => ({
     'zh-tw': await loadLocale('zh-tw'),
     'ja': await loadLocale('ja'),
     'th': await loadLocale('th'),
-    'ma': await loadLocale('ma'),
+    'ms': await loadLocale('ms'),
   },
 }))
 

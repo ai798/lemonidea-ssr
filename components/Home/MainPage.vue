@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router'
 
 // import emitter from '@/utils/mitt'
-
+useSeoMeta(findSEOOptions(useRoute().fullPath))
 const router = useRouter()
 // const visits = useVisits();
 const langs = ['English', 'ภาษาไทย', '日本語', '繁體中文', 'Malay']
@@ -18,7 +18,7 @@ function handleJumpToFunc(index: string) {
   // else if (locale.value === langs[3])
   //   locals = 'zh-tw'
   // else if (locale.value === langs[4])
-  //   locals = 'ma'
+  //   locals = 'ms'
   switch (index) {
     case '0':
       router.push(`${locals}/title-generation`)

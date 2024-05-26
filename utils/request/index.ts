@@ -13,15 +13,17 @@ const service: AxiosInstance = axios.create({
 service.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     // console.log('userStore', pinia.asyncData)
-    const getToken = localStorage.getItem('user_token')
+    // const getToken = localStorage.getItem('user_token')
     // console.log(document.cookie)
     // const getToken = Cookies.value
     // console.log(Cookies, 'getToken')
-    if (getToken)
-      config!.headers!.Authorization = unref(`Bearer ${getToken}`) ?? ''
-    else
-      config!.headers.uuid = localStorage.getItem('unlogin_uuid')
-      // config!.headers.uuid = UnloginUuid.value
+    const headers = useRequestHeaders()
+    console.log(headers)
+    // if (getToken)
+    //   config!.headers!.Authorization = unref(`Bearer ${getToken}`) ?? ''
+    // else
+    //   config!.headers.uuid = localStorage.getItem('unlogin_uuid')
+    // config!.headers.uuid = UnloginUuid.value
 
     config!.headers.timezone = new Date().getTimezoneOffset() / 60
     return config
@@ -34,9 +36,11 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   (response: AxiosResponse) => {
     const res = response.data
+    const headers = useRequestHeaders()
+    console.log(headers)
     if (response.headers.uuid) {
-      const unloginUUid = response.headers.uuid === 'None' ? '' : response.headers.uuid
-      localStorage.setItem('unlogin_uuid', unloginUUid)
+      // const unloginUUid = response.headers.uuid === 'None' ? '' : response.headers.uuid
+      // localStorage.setItem('unlogin_uuid', unloginUUid)
       // UnloginUuid.value = unloginUUid
     }
     if (response.status !== 200) {

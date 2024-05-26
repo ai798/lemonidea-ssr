@@ -85,7 +85,8 @@ export const useUserStore = defineStore('user', {
     },
     setProfile() {
       return new Promise((resolve) => {
-        getUserProfile(this.lang).then((res) => {
+        // console.log(this.userToken)
+        getUserProfile(this.lang, this.userToken ?? '').then((res) => {
           if (res.errCode === 0) {
             // this.reset()
             if (res.payload.user.username)

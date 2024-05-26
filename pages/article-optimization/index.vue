@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+useSeoMeta(findSEOOptions(useRoute().fullPath))
 </script>
 
 <template>

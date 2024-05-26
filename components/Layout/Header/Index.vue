@@ -50,7 +50,7 @@ const feedback = ref('')
 function handleSendFB() {
   if (!feedback.value)
     return
-  sendFB({ feedback: feedback.value }, userStore.getLang)
+  sendFB({ feedback: feedback.value }, userStore.getLang, userStore.getUserToken)
     .then((res) => {
       if (res.errCode === 0) {
         ElMessage({
@@ -90,7 +90,7 @@ function handleLogout() {
 function testRoute() {
   const cur = router.currentRoute.value.path.split('/')
 
-  return cur.find((ele: string) => ['ja', 'ma', 'zh-tw', 'th'].includes(ele))
+  return cur.find((ele: string) => ['ja', 'ms', 'zh-tw', 'th'].includes(ele))
 }
 function handleGoLogin() {
   showTips.value = false

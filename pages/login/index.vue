@@ -67,6 +67,7 @@ function callback(response: any) {
         sign: md5(userData.email + userData.id + CLIENTID),
       },
       userStore.getLang,
+      userStore.getUserToken,
     ).then((res) => {
       console.log(res)
       if (res.errCode === 0 || res.errCode === 2053) {
@@ -103,6 +104,7 @@ function handleSendCode() {
   postSendCode(
     { email: email.value, verify_type: '03' },
     userStore.getLang,
+    userStore.getUserToken,
   ).then((res) => {
     console.log(res)
     if (res)
@@ -141,7 +143,7 @@ function handleRegister() {
     router.currentRoute.value.fullPath.includes('login')
     || router.currentRoute.value.query.isUser === '1'
   ) {
-    postLogin(params, userStore.getLang)
+    postLogin(params, userStore.getLang, userStore.getUserToken)
       .then((res) => {
         if (res.errCode === 0) {
           userStore.setInfo(res.payload)
@@ -183,7 +185,7 @@ function handleRegister() {
       .then(() => {})
   }
   else {
-    postRegister(params, userStore.getLang)
+    postRegister(params, userStore.getLang, userStore.getUserToken)
       .then((res) => {
         if (res.errCode === 0) {
           userStore.setInfo(res.payload)
@@ -259,7 +261,6 @@ onDeactivated(() => {
         </p>
         <!----google登录 ---->
         <GoogleSignInButton
-          class="googlelogin"
           @success="handleSignInSuccess"
           @error="handleSignInError"
         >
@@ -520,5 +521,9 @@ onDeactivated(() => {
   font-style: normal;
   font-weight: 400;
   line-height: 14px; /* 100% */
+}
+.el-input__inner:focus{
+  outline: none;
+  --tw-ring-shadow:none;
 }
 </style>

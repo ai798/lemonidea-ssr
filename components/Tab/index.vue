@@ -19,7 +19,7 @@ const showTips = ref(false)
 const showTipsDialog = ref(false)
 
 const hasLogin = computed(() => {
-  return userStore.getToken
+  return userStore.getUserToken
 })
 onMounted(() => {
   currentTab.value = userStore.getModel === '3.5' ? 1 : 2

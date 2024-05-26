@@ -1,6 +1,32 @@
 import type { Link, Meta, Script } from '@unhead/schema'
 
+// const { locale } = useI18n()
 const link: Link<any['link']>[] = [
+  {
+    rel: 'alternate',
+    hreflang: 'x-default',
+    href: 'https://lemonaidea.com/',
+  },
+  {
+    rel: 'alternate',
+    hreflang: 'ja',
+    href: 'https://lemonaidea.com/ja/',
+  },
+  {
+    rel: 'alternate',
+    hreflang: 'en',
+    href: 'https://lemonaidea.com/',
+  },
+  {
+    rel: 'alternate',
+    hreflang: 'zh-tw',
+    href: 'https://lemonaidea.com/zh-tw/',
+  },
+  {
+    rel: 'alternate',
+    hreflang: 'th',
+    href: 'https://lemonaidea.com/th/',
+  },
   {
     rel: 'lemon2',
     sizes: '180x180',

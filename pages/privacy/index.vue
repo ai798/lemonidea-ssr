@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { getUserPrivacy } from '@/api/index'
 import { useUserStore } from '@/store/user'
+import { findSEOOptions } from '@/composables/seo'
 
 const userStore = useUserStore()
 
@@ -20,8 +21,9 @@ loading.value = true
 //     'Accept-Language': userStore.getLang,
 //   },
 // })
+useSeoMeta(findSEOOptions(useRoute().fullPath))
 
-getUserPrivacy(userStore.getLang)
+getUserPrivacy(userStore.getLang, userStore.getUserToken)
   .then((res) => {
     content.value = res
   })

@@ -39,7 +39,7 @@ function handleTips(url: any) {
   showLoginDialog.value = !showLoginDialog.value
 }
 const titleSpan = computed(() => {
-  return userStore.getToken ? t('lemonaidea_invite_title') : '💡 TIPS'
+  return userStore.getUserToken ? t('lemonaidea_invite_title') : '💡 TIPS'
 })
 function handleShowLoginDialog() {
   showLoginDialog.value = true
@@ -98,7 +98,7 @@ emitter.on('showLoginDialog', handleShowLoginDialog)
           "
         >
           {{
-            userStore.getToken
+            userStore.getUserToken
               ? $t("lemonaidea_invite_copy")
               : $t("lemonaidea_limited_free_btn")
           }}

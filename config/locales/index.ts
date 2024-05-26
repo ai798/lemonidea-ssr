@@ -1,6 +1,6 @@
 import zh from './zh-tw.json'
 import en from './en.json'
-import ma from './ma.json'
+import ms from './ms.json'
 import th from './th.json'
 import ja from './ja.json'
 
@@ -9,5 +9,5 @@ export {
   th,
   ja,
   zh,
-  ma,
+  ms,
 }
