@@ -24,11 +24,11 @@ function judgeType(type: any) {
 watch(
   () => userStore.getModel,
   (val) => {
-    if (val === 3.5) {
+    if (val === '3.5') {
       versionType.value = 3.5
       judgeType(versionType.value)
     }
-    else if (val === 4.0) {
+    else if (val === '4.0') {
       versionType.value = 4.0
       judgeType(versionType.value)
     }

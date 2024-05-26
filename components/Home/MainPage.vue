@@ -115,6 +115,7 @@ function handleJumpToFunc(index: string) {
       </div>
     </div>
   </div>
+  <QA />
 </template>
 
 <style lang="scss" scoped>

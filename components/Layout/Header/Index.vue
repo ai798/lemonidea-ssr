@@ -68,11 +68,12 @@ function handleGoToIns() {
   // open('https://www.instagram.com/lemonaidea')
 }
 const local: any = locale.value === 'en' ? '' : `/${locale.value}`
+const localGoHome: any = locale.value === 'en' ? '/' : `/${locale.value}`
 function handleOpenPrivacy() {
   router.push(`${local}/privacy`)
 }
 function handleGoHome() {
-  router.push('/')
+  router.push(`${localGoHome}`)
 }
 function handleLogout() {
   // localStorage.removeItem('user')

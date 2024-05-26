@@ -4,7 +4,7 @@ const runtimeConfigPrivate = {
   gitlabToken: process.env.NUXT_GITLAB_TOKEN ?? '',
 }
 const runtimeConfigPublic = {
-  siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
   siteName: 'lemonaidea',
   siteDescription: '',
   language: 'en-US',

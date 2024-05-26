@@ -10,7 +10,17 @@ export default defineNuxtConfig({
       script: head.script,
     },
   },
-
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'lang-with-slash',
+        path: '/:lang/',
+        redirect: (to) => {
+          return `/`
+        },
+      })
+    },
+  },
   css: ['~/assets/css/main.css'],
 
   extends: [
@@ -19,6 +29,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@element-plus/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
     '@nuxt/devtools', // https://devtools.nuxtjs.org
     '@nuxtjs/color-mode', // https://color-mode.nuxtjs.org/
     '@nuxt/content', // https://content.nuxtjs.org,

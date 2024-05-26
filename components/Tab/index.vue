@@ -26,7 +26,7 @@ onMounted(() => {
   // userStore.setModel(currentTab.value === 1 ? "3.5" : "4.0");
 })
 function handleSelectTab(tab: any) {
-  if (!hasLogin.value && tab == 2) {
+  if (!hasLogin.value && tab === 2) {
     showTips.value = true
     // emitter.emit('showLoginDialog')
     return

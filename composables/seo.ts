@@ -43,7 +43,7 @@ const seoArray = [{
   title: 'Lemonaidea｜AIを活用して高品質なLemon8投稿タイトルを生成',
   description: 'Lemon8 クリエイター向けにカスタマイズされた AI ライティング エキスパート: AI を使用して、高品質で人気のある Lemon8 投稿タイトルを無料で生成できます',
 }, {
-  url: '/title-generation/',
+  url: '/title-generation',
   title: 'Lemonaidea | Use AI to generate high-quality Lemon8 post titles',
   description: 'AI writing expert customized for Lemon8 creators: Use AI to help you generate high-quality popular post titles for free',
 }, {
