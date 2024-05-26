@@ -1,7 +1,11 @@
 <script lang="ts" setup>
+import { useRoute } from 'vue-router'
 import { getUserPrivacy } from '@/api/index'
 import { useUserStore } from '@/store/user'
 import { findSEOOptions } from '@/composables/seo'
+
+const route = useRoute()
+const canonicalUrl = `https://www.lemonaidea.com${route.fullPath}`
 
 const userStore = useUserStore()
 
@@ -22,6 +26,14 @@ loading.value = true
 //   },
 // })
 useSeoMeta(findSEOOptions(useRoute().fullPath))
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonicalUrl,
+    },
+  ],
+})
 
 getUserPrivacy(userStore.getLang, userStore.getUserToken)
   .then((res) => {

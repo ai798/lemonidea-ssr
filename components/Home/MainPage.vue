@@ -1,9 +1,19 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
+const route = useRoute()
+const router = useRouter()
+const canonicalUrl = `https://www.lemonaidea.com${route.fullPath}`
 // import emitter from '@/utils/mitt'
 useSeoMeta(findSEOOptions(useRoute().fullPath))
-const router = useRouter()
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonicalUrl,
+    },
+  ],
+})
 // const visits = useVisits();
 const langs = ['English', 'ภาษาไทย', '日本語', '繁體中文', 'Malay']
 const { locale } = useI18n()

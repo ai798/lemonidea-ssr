@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // import { decodeCredential } from 'vue3-google-login'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import md5 from 'md5'
 import { ElMessage } from 'element-plus'
 
@@ -12,6 +12,17 @@ import { CLIENTID } from '@/utils/index'
 import { useUserStore } from '@/store/user'
 import { googleLogin, postLogin, postRegister, postSendCode } from '@/api'
 
+const route = useRoute()
+const canonicalUrl = `https://www.lemonaidea.com${route.fullPath}`
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonicalUrl,
+    },
+  ],
+})
 const Cookies = useCookie('user')
 const { locale } = useI18n()
 const userStore = useUserStore()
